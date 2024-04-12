@@ -1,0 +1,126 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #000;
+}
+
+.batman {
+  position: relative;
+  width: 300px;
+  height: 400px;
+}
+
+.ears,
+.face,
+.chest {
+  position: absolute;
+}
+
+/* Orejas */
+.ear-left,
+.ear-right {
+  width: 80px;
+  height: 120px;
+  background-color: #000;
+  border-radius: 50% 50% 0 0;
+}
+
+.ear-left {
+  left: 50px;
+  transform: rotate(-20deg);
+}
+
+.ear-right {
+  right: 50px;
+  transform: rotate(20deg);
+}
+
+/* Cara */
+.face {
+  top: 120px;
+  width: 200px;
+  height: 160px;
+  background-color: #000;
+  border-radius: 50%;
+}
+
+.eyes {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 30px 0;
+}
+
+.eye-left,
+.eye-right {
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.nose {
+  position: absolute;
+  top: 90px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 20px;
+  background-color: #000;
+  border-radius: 50% 50% 0 0;
+}
+
+.mouth {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 20px;
+  background-color: #000;
+  border-radius: 0 0 50% 50%;
+}
+
+.mouth .text {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 16px;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+/* Pecho */
+.chest {
+  top: 280px;
+  width: 200px;
+  height: 120px;
+  background-color: #000;
+  border-radius: 50%;
+}
+
+.symbol {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.chest .flower {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+  background-color: #ff69b4;
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(255, 105, 180, 0.5);
+}
